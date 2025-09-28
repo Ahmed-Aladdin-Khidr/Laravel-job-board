@@ -30,6 +30,9 @@ This is a learning project that will be developed incrementally.
 - **Status Management**: Active, Inactive, Closed
 - **Relationships**: Jobs belong to employers (users)
 
+### 🆕 Latest Updates (Since Last Commit)
+- **Debug Tool**: Added debugging capabilities for development
+
 ### 🎯 Next Steps
 - [ ] User authentication system
 - [ ] Job posting interface
