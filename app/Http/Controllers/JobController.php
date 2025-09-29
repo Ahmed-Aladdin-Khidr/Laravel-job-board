@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Job;
 
 class JobController extends Controller
 {
@@ -11,7 +12,9 @@ class JobController extends Controller
      */
     public function index()
     {
-        //
+        return view('jobs.index', [
+            'jobs' => Job::all()
+        ]);
     }
 
     /**
@@ -33,9 +36,9 @@ class JobController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Job $job)
     {
-        //
+        return view('jobs.show', compact('job'));
     }
 
     /**
