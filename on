@@ -1,0 +1,72 @@
+warning: in the working copy of 'resources/views/jobs/index.blade.php', CRLF will be replaced by LF the next time Git touches it
+[1mdiff --git a/resources/views/jobs/index.blade.php b/resources/views/jobs/index.blade.php[m
+[1mindex 4784776..eae32db 100644[m
+[1m--- a/resources/views/jobs/index.blade.php[m
+[1m+++ b/resources/views/jobs/index.blade.php[m
+[36m@@ -1,7 +1,29 @@[m
+ <x-layout>[m
+     <x-breadcrumbs [m
+       class="mb-4" [m
+[31m-      :links="['Jobs' => route('jobs.index')" />[m
+[32m+[m[32m      :links="['Jobs' => route('jobs.index')]" />[m
+[32m+[m
+[32m+[m[32m      <x-card class="mb-4 text-sm">[m
+[32m+[m[32m        <div class="mb-4 grid grid-cols-2 gap-4">[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <div class="mb-1 font-semibold ">Search</div>[m
+[32m+[m[32m                <x-text-input name="search" value="" placeholder="Search for a job" />[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <div class="mb-1 font-semibold ">Salary</div>[m
+[32m+[m[32m                <div class="flex space-x-2">[m
+[32m+[m[32m                    <x-text-input name="min_salary" value="" placeholder="Min" />[m
+[32m+[m[32m                    <x-text-input name="max_salary" value="" placeholder="Max" />[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                3[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                4[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </x-card>[m
+ [m
+     @foreach ($jobs as $job)[m
+         <x-job-card class="mb-4" :$job>[m
+warning: in the working copy of 'resources/views/jobs/index.blade.php', CRLF will be replaced by LF the next time Git touches it
+[1mdiff --git a/resources/views/jobs/index.blade.php b/resources/views/jobs/index.blade.php[m
+[1mindex 4784776..eae32db 100644[m
+[1m--- a/resources/views/jobs/index.blade.php[m
+[1m+++ b/resources/views/jobs/index.blade.php[m
+[36m@@ -1,7 +1,29 @@[m
+ <x-layout>[m
+     <x-breadcrumbs [m
+       class="mb-4" [m
+[31m-      :links="['Jobs' => route('jobs.index')" />[m
+[32m+[m[32m      :links="['Jobs' => route('jobs.index')]" />[m
+[32m+[m
+[32m+[m[32m      <x-card class="mb-4 text-sm">[m
+[32m+[m[32m        <div class="mb-4 grid grid-cols-2 gap-4">[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <div class="mb-1 font-semibold ">Search</div>[m
+[32m+[m[32m                <x-text-input name="search" value="" placeholder="Search for a job" />[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <div class="mb-1 font-semibold ">Salary</div>[m
+[32m+[m[32m                <div class="flex space-x-2">[m
+[32m+[m[32m                    <x-text-input name="min_salary" value="" placeholder="Min" />[m
+[32m+[m[32m                    <x-text-input name="max_salary" value="" placeholder="Max" />[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                3[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                4[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </x-card>[m
+ [m
+     @foreach ($jobs as $job)[m
+         <x-job-card class="mb-4" :$job>[m
